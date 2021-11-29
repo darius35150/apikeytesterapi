@@ -8,6 +8,9 @@ const axios = require('axios');
 const { response } = require('express');
 const app = express();
 
+app.get('/', (req, res) =>{
+   res.json("Welcome to my api!!!");
+});
 
 app.get('/googlegeocode', (req, res) => {
 

@@ -7,7 +7,7 @@
     "node": "10.23.0"
   },
   "scripts": {
-    "test": "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "author": "Darius Holley",
   "license": "ISC",
