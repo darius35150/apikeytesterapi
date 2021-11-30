@@ -8,6 +8,11 @@ const axios = require('axios');
 const { response } = require('express');
 const app = express();
 
+app.use((req, res, next) =>{
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.get('/', (req, res) =>{
    res.json("Welcome to my api!!!");
 });
