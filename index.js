@@ -57,7 +57,7 @@ const performGeocodeTest = (key, placename, req, res) => {
   });
 }
 
-const performPlacesLookup = (res, req) =>{
+const performPlacesLookup = (req, res) =>{
   key = req.query.key;
   placename = req.query.placename;
   if (!testMeetsQualifications(key))
